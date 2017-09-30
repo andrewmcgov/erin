@@ -1,1 +1,61 @@
 /* SECTIONS */
+.section {
+  padding: 30px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.section__header {
+  text-align: center;
+  h2 {
+    font-size: 2.5em;
+  }
+}
+
+// NAVIGATION
+.nav {
+  position: fixed;
+  top: 0;
+}
+.nav__list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.nav__list-item {
+  display: inline-block;
+  padding: 10px 15px;
+  color: $white;
+}
+
+
+// HERO SECTION
+.hero {
+  width: 100%;
+  height: 100%;
+  background-image: url(../../images/hero-image.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero__text {
+   color: $white;
+   text-align: center;
+   margin-top: 100px;
+   text-shadow: 3px 3px 3px $shadows;
+   h1 {
+     font-size: 3.5em;
+   }
+}
+.hero__scroll {
+  width: 40px;
+  margin-top: 100px;
+}
+
+// FOOTER
+.footer {
+  padding: 30px 20px;
+  text-align: center;
+  background-color: $darkGrey;
+  color: $white;
+}
