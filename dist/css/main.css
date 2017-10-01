@@ -34,6 +34,9 @@ p {
 
 /* NAVIGATION */
 /* SECTIONS */
+body {
+  background-color: #fff7ef; }
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,7 +51,7 @@ p {
   background-color: rgba(0, 0, 0, 0.4); }
 
 .header__logo {
-  color: #fcfcfc;
+  color: #fff7ef;
   font-family: "Playfair Display", serif;
   font-size: 1.5em;
   padding: 10px 0 10px 20px;
@@ -64,7 +67,7 @@ p {
 .nav__list-item {
   display: inline-block;
   padding: 10px 0 10px 50px;
-  color: #fcfcfc; }
+  color: #fff7ef; }
 
 .hero {
   width: 100%;
@@ -83,7 +86,7 @@ p {
   align-items: center; }
 
 .hero__text {
-  color: #fcfcfc;
+  color: #fff7ef;
   text-align: center;
   margin-top: 100px;
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3); }
@@ -123,6 +126,10 @@ p {
   display: inline-block;
   width: 50%; }
 
+.services__full-wrap {
+  background-color: #2d2d2d;
+  color: #fff7ef; }
+
 .services__intro {
   margin-bottom: 60px; }
 
@@ -151,7 +158,7 @@ p {
     line-height: 1.4em;
     margin-bottom: 10px; }
   .listen-box .listen-link {
-    color: #0c0c0c; }
+    color: #fff7ef; }
 
 .ensemble__list {
   margin-top: 15px;
@@ -169,6 +176,6 @@ p {
   padding: 30px 20px;
   text-align: center;
   background-color: #2d2d2d;
-  color: #fcfcfc; }
+  color: #fff7ef; }
 
 /*# sourceMappingURL=main.css.map */

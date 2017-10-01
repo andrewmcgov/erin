@@ -1,4 +1,7 @@
 /* SECTIONS */
+body {
+  background-color: $white;
+}
 
 // HEADER
 .header {
@@ -94,8 +97,9 @@
 }
 
 // SERVICS SECTION
-.services {
-
+.services__full-wrap {
+  background-color: $darkGrey;
+  color: $white;
 }
 .services__intro {
   margin-bottom: 60px;
@@ -125,7 +129,7 @@
     margin-bottom: 10px;
   }
   .listen-link {
-    color: $black;
+    color: $white;
   }
 }
 .ensemble__list {
