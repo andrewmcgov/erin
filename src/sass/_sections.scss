@@ -1,20 +1,27 @@
 /* SECTIONS */
-.section {
-  padding: 30px 20px;
-  max-width: 1000px;
-  margin: 0 auto;
+
+// HEADER
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 10px 7px 10px 7px;
+  background-color: rgba(0,0,0,0.4);
 }
-.section__header {
-  text-align: center;
-  h2 {
-    font-size: 2.5em;
-  }
+.header__logo {
+  color: $white;
+  font-family: $headingFont;
+  font-size: 1.5em;
+  padding: 10px 0 10px 20px;
+  display: inline-block;
 }
+
 
 // NAVIGATION
 .nav {
-  position: fixed;
-  top: 0;
+ display: inline-block;
 }
 .nav__list {
   list-style-type: none;
@@ -22,7 +29,7 @@
 }
 .nav__list-item {
   display: inline-block;
-  padding: 10px 15px;
+  padding: 10px 0 10px 50px;
   color: $white;
 }
 
@@ -51,6 +58,90 @@
   width: 40px;
   margin-top: 100px;
 }
+
+// SECTIONS
+.section {
+  padding: 60px 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.section__header {
+  text-align: center;
+  margin-bottom: 60px;
+  .section__title {
+    font-size: 2.5em;
+  }
+}
+
+// ABOUT SECTION
+.about {
+}
+.about__wrapper {
+ display: flex;
+}
+.about__image-wrapper {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+.about__image {
+  width: 70%;
+  margin: 0 auto;
+}
+.about__text {
+  display: inline-block;
+  width: 50%;
+}
+
+// SERVICS SECTION
+.services {
+
+}
+.services__intro {
+  margin-bottom: 60px;
+}
+.services__wrapper {
+  display: flex;
+}
+.services__block {
+  width: 50%;
+}
+.services__block-title {
+  font-style: italic;
+  margin-bottom: 30px;
+}
+.services__block-description {
+  width: 90%;
+}
+.listen-box {
+  width: 90%;
+  margin-top: 65px;
+  .listen-title {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+  }
+  .listen-description {
+    line-height: 1.4em;
+    margin-bottom: 10px;
+  }
+  .listen-link {
+    color: $black;
+  }
+}
+.ensemble__list {
+  margin-top: 15px;
+  list-style-type: none;
+  padding-left: 30px;
+  .ensemble__list-item {
+    margin-bottom: 5px;
+    font-style: italic;
+  }
+}
+.services__footer {
+  margin-top: 50px;
+  text-align: center;
+}
+
 
 // FOOTER
 .footer {
