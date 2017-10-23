@@ -10,3 +10,15 @@ body {
 * {
   box-sizing: border-box;
 }
+
+/* HELPERS */
+@media screen and (max-width: $small) {
+  .small--hide {
+    display: none;
+  }
+}
+@media screen and (min-width: $mediumUp) {
+  .medium-up--hide {
+    display: none;
+  }
+}
