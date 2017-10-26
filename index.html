@@ -4,12 +4,96 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Erin Pickering</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/main.css">
   </head>
   <body>
-    <h1>Erin Pickering</h1>
-    <p>Cellist, Pianist, Event coodinator</p>
+
+    <header class="header">
+      <span class="header__logo">Erin Pickering.</span>
+
+      <div class="nav small--hide">
+        <ul class="nav__list">
+          <a href="#about"><li class="nav__list-item">About</li></a>
+          <a href="#services"><li class="nav__list-item">Services</li></a>
+          <a href="#contact"><li class="nav__list-item">Contact</li></a>
+        </ul>
+      </div>
+
+    </header>
+
+    <div class="hero">
+      <div class="hero__text">
+        <h1>Erin Pickering</h1>
+        <p>Cellist, Pianist, Event coordinator</p>
+        <img class="hero__scroll" src="images/down-chevron.png" alt="down-chevron">
+      </div>
+    </div>
+
+    <div id="about" class="section about">
+      <div class="section__header">
+        <h2 class="section__title about__title">About</h2>
+      </div>
+      <div class="section__wrapper about__wrapper">
+        <div class="about__image-wrapper">
+          <img class="about__image" src="images/headshot.jpg" alt="Headshot">
+        </div>
+        <div class="about__text">
+          <p>An active member of the Ottawa music community, Erin has dedicated much of her professional life and education to music performance.  Having studied and performed across Canada and internationally, Erin has gained valuable experience and skills with varying genres of music.  Erin holds a Master of Music from the University of Ottawa and a Bachelor of Music from Western University, both in cello performance, and has also completed all levels of Conservatory Canada training in piano.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="services__full-wrap">
+      <div id="services" class="section services">
+        <div class="section__header">
+          <h2 class="section__title">Services</h2>
+        </div>
+        <p class="services__intro">Brighten your event with live music! Whether you are looking for background music at an office party or the perfect song to accompany you down the aisle on your special day, I provide beautiful music tailored to your requests.</p>
+        <div class="services__wrapper">
+
+          <div class="services__block">
+            <h3 class="services__block-title">Solo</h3>
+            <p class="services__block-description">If you are looking for an elegant, intimate musical experience for your event, the rich sound of the solo cello or piano is the perfect choice.</p>
+            <div class="listen-box">
+              <h4 class="listen-title">Listen</h4>
+              <p class="listen-description">Visit me on Soundcloud to hear a sample of my sound:</p>
+              <a  class="listen-link"href="https://soundcloud.com/erinpickering6">https://soundcloud.com/erinpickering6</a>
+            </div>
+          </div>
+
+          <div class="services__block">
+            <h3 class="services__block-title">Ensemble</h3>
+            <p class="services__block-description">I have worked with many talented performers in Ottawa as a part of various duos, trios, quartets and more.  If you are looking to book an ensemble of musicians, just ask! The following are types of ensembles you can request:</p>
+            <ul class="ensemble__list">
+              <li class="ensemble__list-item">Cello Duo</li>
+              <li class="ensemble__list-item">Piano and cello duo</li>
+              <li class="ensemble__list-item">Piano and violin duo</li>
+              <li class="ensemble__list-item">Piano trio: piano, violin, and cello</li>
+              <li class="ensemble__list-item">Violin and cello duo</li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="services__footer">
+          <p class="services__footer-text">Whether you have specific song requests or just an idea of what genre of music you wish to have played, I am happy to work with you to perfectly capture what you have in mind.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="section contact">
+      <div class="section__header">
+        <h2 class="section__title">Contact</h2>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at tempor mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed et rutrum quam. Morbi ultrices velit in metus interdum, quis vulputate nibh accumsan. Vivamus egestas arcu urna, eu fringilla nisi aliquet eu. Phasellus in mattis turpis. Morbi sed nisl mauris. Cras ut dui vel tellus vehicula lacinia. Pellentesque tincidunt porttitor nisl id molestie. Nulla sed porta arcu, quis commodo eros. Integer eu convallis nulla. Proin porta convallis tempus. Nullam vitae ex at diam sagittis cursus vel tincidunt nisi. Maecenas a nibh vulputate mi congue feugiat vitae eu mauris. Fusce nisi justo, lobortis sit amet mi et, dignissim ornare ipsum. Aliquam vestibulum mauris sit amet tincidunt condimentum.</p>
+    </div>
 
     <script src="index.js"></script>
+    <footer class="footer">
+      <p class="footer">&copy; Erin Pickering, 2017</p>
+    </footer>
   </body>
 </html>
