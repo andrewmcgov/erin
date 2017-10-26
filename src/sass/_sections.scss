@@ -21,6 +21,11 @@ body {
   display: inline-block;
 }
 
+@media screen and (max-width: $small) {
+  .header {
+    flex-direction: column;
+  }
+}
 
 // NAVIGATION
 .nav {
@@ -34,6 +39,14 @@ body {
   display: inline-block;
   padding: 10px 0 10px 50px;
   color: $white;
+}
+
+.mobile-nav {
+  
+}
+.mobile-nav__list {
+  list-style-type: none;
+  text-align: center;
 }
 
 
