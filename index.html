@@ -10,13 +10,28 @@
   <body>
 
     <header class="header">
-      <span class="header__logo">Erin Pickering.</span>
+      <div class="header__row">
+        <span class="header__logo">Erin Pickering.</span>
+        <div class="nav small--hide">
+          <ul class="nav__list">
+            <a href="#about"><li class="nav__list-item">About</li></a>
+            <a href="#services"><li class="nav__list-item">Services</li></a>
+            <a href="#contact"><li class="nav__list-item">Contact</li></a>
+          </ul>
+        </div>
+        <div id="mobileNavTrigger" class="mobile-nav__trigger medium-up--hide">
+          <span class="mobile-nav__trigger--one"></span>
+          <span class="mobile-nav__trigger--two"></span>
+          <span class="mobile-nav__trigger--three"></span>
+        </div>
+      </div>
 
-      <div class="nav small--hide">
-        <ul class="nav__list">
-          <a href="#about"><li class="nav__list-item">About</li></a>
-          <a href="#services"><li class="nav__list-item">Services</li></a>
-          <a href="#contact"><li class="nav__list-item">Contact</li></a>
+
+      <div class="mobile-nav medium-up--hide">
+        <ul class="mobile-nav__list">
+          <a href="#about"><li class="mobile-nav__list-item">About</li></a>
+          <a href="#services"><li class="mobile-nav__list-item">Services</li></a>
+          <a href="#contact"><li class="mobile-nav__list-item">Contact</li></a>
         </ul>
       </div>
 

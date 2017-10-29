@@ -47,15 +47,18 @@ body {
   background-color: #fff7ef; }
 
 .header {
+  width: 100%;
+  position: fixed;
+  top: 0; }
+
+.header__row {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  position: fixed;
-  top: 0;
   padding: 10px 7px 10px 7px;
   background-color: rgba(0, 0, 0, 0.4); }
 
@@ -65,6 +68,19 @@ body {
   font-size: 1.5em;
   padding: 10px 0 10px 20px;
   display: inline-block; }
+
+.mobile-nav--open .header__row {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+@media screen and (max-width: 480px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .header__logo {
+    width: 100%;
+    text-align: left; } }
 
 .nav {
   display: inline-block; }
@@ -77,6 +93,50 @@ body {
   display: inline-block;
   padding: 10px 0 10px 50px;
   color: #fff7ef; }
+
+.mobile-nav {
+  -webkit-transform: translateY(-200px);
+  transform: translateY(-200px); }
+
+.mobile-nav__list {
+  list-style-type: none;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4); }
+  .mobile-nav__list a {
+    text-decoration: none; }
+
+.mobile-nav__list-item {
+  color: #fff7ef;
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+.mobile-nav__trigger {
+  padding: 0 10px; }
+  .mobile-nav__trigger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff7ef; }
+  .mobile-nav__trigger .mobile-nav__trigger--one {
+    margin-bottom: 7px; }
+  .mobile-nav__trigger .mobile-nav__trigger--two {
+    margin-bottom: 7px; }
+
+.mobile-nav--open .mobile-nav {
+  -webkit-transform: translateY(0);
+  transform: translateY(0); }
+
+.mobile-nav--open .mobile-nav__trigger--one {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.mobile-nav--open .mobile-nav__trigger--two {
+  display: none; }
+
+.mobile-nav--open .mobile-nav__trigger--three {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-top: -10px; }
 
 .hero {
   width: 100%;
