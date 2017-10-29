@@ -60,7 +60,10 @@ body {
   -ms-flex-align: center;
   align-items: center;
   padding: 10px 7px 10px 7px;
-  background-color: rgba(0, 0, 0, 0.4); }
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transition: all .15s;
+  transition: all .15s;
+  z-index: 10; }
 
 .header__logo {
   color: #fff7ef;
@@ -70,7 +73,8 @@ body {
   display: inline-block; }
 
 .mobile-nav--open .header__row {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #0c0c0c; }
 
 @media screen and (max-width: 480px) {
   .header {
@@ -96,7 +100,10 @@ body {
 
 .mobile-nav {
   -webkit-transform: translateY(-200px);
-  transform: translateY(-200px); }
+  transform: translateY(-200px);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  z-index: 5; }
 
 .mobile-nav__list {
   list-style-type: none;
@@ -116,7 +123,9 @@ body {
     display: block;
     width: 25px;
     height: 3px;
-    background-color: #fff7ef; }
+    background-color: #fff7ef;
+    -webkit-transition: all .3s;
+    transition: all .3s; }
   .mobile-nav__trigger .mobile-nav__trigger--one {
     margin-bottom: 7px; }
   .mobile-nav__trigger .mobile-nav__trigger--two {
